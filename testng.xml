@@ -1,0 +1,20 @@
+ <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name=" OPENSOURCECMS application test automation test suite">
+
+	 <listeners>
+
+		<listener class-name="com.cms.qa.ExtentReportListener.ExtentReportTestNG" />
+
+	</listeners>
+ 
+	<test name="opensourcecms app test cases">
+		<classes>
+			<class name="com.cms.qa.testcases.PostPageTest"></class>
+			<class name="com.cms.qa.testcases.HomePageTest"></class>
+			<class name="com.cms.qa.testcases.LoginPageTest"></class>
+
+		</classes>
+	</test>
+</suite>

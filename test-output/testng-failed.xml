@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ OPENSOURCECMS application test automation test suite]">
+  <listeners>
+    <listener class-name="com.cms.qa.ExtentReportListener.ExtentReportTestNG"/>
+  </listeners>
+  <test name="opensourcecms app test cases(failed)">
+    <classes>
+      <class name="com.cms.qa.testcases.PostPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyPostsPageLabelTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.cms.qa.testcases.PostPageTest -->
+      <class name="com.cms.qa.testcases.HomePageTest">
+        <methods>
+          <include name="verifyCorrectUsernameTest"/>
+          <include name="VerifyHomePageTitleTest"/>
+          <include name="setUp"/>
+          <include name="verifyPostLinkTest"/>
+        </methods>
+      </class> <!-- com.cms.qa.testcases.HomePageTest -->
+      <class name="com.cms.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="LoginPageTitleTest"/>
+        </methods>
+      </class> <!-- com.cms.qa.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- opensourcecms app test cases(failed) -->
+</suite> <!-- Failed suite [ OPENSOURCECMS application test automation test suite] -->
